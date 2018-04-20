@@ -111,7 +111,7 @@ composer identity issue -c hdbAdmin@hdb-bto -u hdbAdmin -a org.acme.hdb-bto.HDB#
 
 The grammar is as follows:
 
->composer identity issue –c <admin card> -u <username to be issued> -a <participant to be attached to>
+>composer identity issue –c < admin card > -u < username to be issued > -a < participant to be attached to >
 
 ### 2.	Use the import function to save the card into the identity wallet:  ###
 ```
