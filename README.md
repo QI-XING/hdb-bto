@@ -29,7 +29,7 @@ HDB BTO housing grant and flat allocation process in blockchain
 
 •	Default setting: Cloud9 IDE (localhost:7171), playground composer (localhost: 4040), guest (localhost:3000, localhost:3001)
 
->*#You may edit the original Vagrantfile, near the last lines, and add additional port mapping pairs(one for each rest-server instance). eg:*
+>*You may edit the original Vagrantfile, near the last lines, and add additional port mapping pairs(one for each rest-server instance). eg:*
 ```
 config.vm.network :forwarded_port, guest: 3000 host: 3000
 config.vm.network :forwarded_port, guest: 3001 host: 3001
@@ -41,7 +41,7 @@ to add a new port mapping of 3000, 3001
 vagrant halt
 vagrant up
 ```
->*#If you do not have the updated Vagrant version yet,*
+>*If you do not have the updated Vagrant version yet,*
 
 ### 1. Update the code in composer-playground (inside the ~/composer-playground folder): ###
 ```
@@ -76,7 +76,7 @@ Password: <randomString>
 # Generate and Deploy Business Network Archive (BNA) file
 
 ### 1. Open the cloud9 IDE and drop the exported BNA file into the composer-playground folder. ###
->#Generates a hbd-bto.bna file within the /hdb-bto directory 
+#Generates a hbd-bto.bna file within the /hdb-bto directory 
 ```
 mkdir hdb-bto-bna
 cd hdb-bto-bna
@@ -87,7 +87,7 @@ unzip ../hdb-bto.bna
 ```
 docker exec -it cli bash
 ```
->#See that the composer credentials are stored in the /root/.composer directory as cards.
+#See that the composer credentials are stored in the /root/.composer directory as cards.
 ```
 ls /root/.composer/cards/
 ```
