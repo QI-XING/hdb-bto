@@ -83,7 +83,9 @@ cd hdb-bto-bna
 sudo apt install unzip
 unzip ../hdb-bto.bna
 ```
+
 ### 2. Enter the CLI container using: ###
+
 ```
 docker exec -it cli bash
 ```
@@ -91,19 +93,24 @@ docker exec -it cli bash
 ```
 ls /root/.composer/cards/
 ```
+
 ### 3. Generate RESTful API to localhost ###
 ```
 composer-rest-server -c hdbadmin@hdb-bto
 ```
+
 ### 4. Run the following command to verify by noting the success response ###
 ```
 ~$ composer network ping -n hdb-bto -p hlfv1 -i hdbAdmin -s <randomString>
 ```
+
 ### 5. Shutdown network (optional) ###
 ```
 ./byfn.sh -m down
 ```
+
 # CLI Tool and Identity Management
+
 ### 1.	Issuing Identities. Open a terminal and run the following command: ###
 ```
 composer identity issue -c hdbAdmin@hdb-bto -u hdbAdmin -a org.acme.hdb-bto.HDB#hdbAdmin@hdb.com 
@@ -117,10 +124,12 @@ The grammar is as follows:
 ```
 composer card import -f hdbAdmin\@hdb-bto-hdbAdmin.card
 ```
+
 ### 3.	There is also a “list” command to show the status of all issued identities: ###
 ```
 composer identity list –c hdbAdmin@hdb-bto
 ```
+
 ### 4.	Deploy your BNA, create new participants and identity using the playground or command line. ###
 
 ### 5.	Create instances of composer-rest-server using: ###
