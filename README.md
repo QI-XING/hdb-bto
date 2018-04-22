@@ -38,9 +38,9 @@ HDB BTO housing grant and flat allocation process in blockchain
 ==> default: ++ su ubuntu -c 'nodejs server.js -l 0.0.0.0 -w /home/ubuntu --auth root:secret'
 ```
 
-- and the terminal command exits, you can open the browser based IDE at localhost:8181
+- and the terminal command exits, you can open the browser based IDE at http://localhost:7171
 
-- login into the IDE using the default credentials root and secret
+- login into the IDE using the default credentials -> Username: root and Password: secret
 
 ### To change Vagrant Settings: ###
 
