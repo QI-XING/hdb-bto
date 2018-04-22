@@ -29,7 +29,7 @@ HDB BTO housing grant and flat allocation process in blockchain
 
 •	After which, a jdbc should be created. Ensure that it's connected by right clicking on the jdbc and select "Connect". You should be prompted with a popup asking for credentials. Simply enter "root" as User name and "password" as Password.
 
-•	Download the project from this repo at this :link: <insert link>. 
+•	Download the project from this repo at this :link: https://github.com/QI-XING/hdb-bto/blob/master/hdb-bto.zip. 
   
 •	In your NetBeans, click on "Open Project" and select the project downloaded above. (To check if the project has been successfully opened, you should be able to see 3 project files being opened under the Projects tab, namely 1) HDB-BTO 2) HDB-BTO-ejb 3) HDB-BTO-war)
 
@@ -52,7 +52,7 @@ HDB BTO housing grant and flat allocation process in blockchain
 
 •	If you are using windows 7, please use vagrant 1.9.6 only and Virtual Box 5.1.x
 
-•	Download the Vagrantfile from this repo at this link: https://github.com/QI-XING/hdb-bto/blob/master/Vagrantfile to an empty folder
+•	Download the Vagrantfile from this repo at this :link: https://github.com/QI-XING/hdb-bto/blob/master/Vagrantfile to an empty folder
 
 **Pre-requisites:**
 
@@ -142,6 +142,8 @@ docker exec -it ca.org1.example.com fabric-ca-client register -M registrar -u ht
 Password: <randomString>
 ```
 # Generate and Deploy Business Network Archive (BNA) file
+
+- Download the bna file at this :link: https://github.com/QI-XING/hdb-bto/blob/master/hdb-bto.bna
 
 ### 1. Open the cloud9 IDE and drop the exported BNA file into the composer-playground folder. ###
 #Generates a hbd-bto.bna file within the /hdb-bto directory 
