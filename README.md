@@ -1,7 +1,52 @@
 # hdb-bto IS4302-Tut3Grp1
 HDB BTO housing grant and flat allocation process in blockchain
 
-**Preparation:**
+# Web Application
+
+**Software Requirements:**
+
+•	Download and Install NetBeans IDE Download Bundles :link: https://netbeans.org/downloads/index.html under Java EE
+
+•	Download and Install MySQL Community Server from :link: http://dev.mysql.com/downloads/mysql (Use the all-in-one installer which will also install the Workbench if you are using Windows)
+
+•	Download MySQL Connector/J version 5.1.45 from :link: http://dev.mysql.com/downloads/connector/j (Click on "Looking for previous GA versions?" if you are unable to find your OS)
+
+•	For the MySQL Connector/J, extract and copy mysql-connector-java-5.1.45-bin.jar into these two folders: 1) NetBeans installation folder - "C:\Program Files\NetBeans 8.2\ide\modules\ext"; and 2) GlassFish installation folder - "C:\glassfish-4.1.1\glassfish\domains\domain1\lib". Your installation folders might differ from mine. To use this JAR file in NetBeans, replace the existing driver JAR file in NetBeans under "Services > Databases > Drivers > MySQL (Connector/J driver) > Customize"
+
+**Deploying Web Application:**
+
+•	Startup NetBeans. 
+- For Windows Users: (Ensure that your MySQL56 is running by checking on Services under Windows Adminstrative Tools)
+- For Mac Users: (Ensure that your SQL is running by pressing "Command + Spacebar" and search for mysql) 
+
+•	Once you are in NetBeans, click on the Services tab, you should see MySQL Server at localhost:3306 under Databases. Right click on it and select "Properties". Ensure that the fields are as follows:
+- Server Host Name: localhost
+- Server Port Number: 3306
+- Administrator User Name: root 
+- Adminstrator Password: password
+
+•	Once you are in NetBeans, click on the Services tab, you should see MySQL Server at localhost:3306 under Databases. Right click on it and select "Create Database". Name this Database "hdb-bto" and check "Grant Full Access To:" and select "mysql.sys@localhost" 
+
+•	After which, a jdbc should be created. Ensure that it's connected by right clicking on the jdbc and select "Connect". You should be prompted with a popup asking for credentials. Simply enter "root" as User name and "password" as Password.
+
+•	Download the project from this repo at this :link: <insert link>. 
+  
+•	In your NetBeans, click on "Open Project" and select the project downloaded above. (To check if the project has been successfully opened, you should be able to see 3 project files being opened under the Projects tab, namely 1) HDB-BTO 2) HDB-BTO-ejb 3) HDB-BTO-war)
+
+•	Right click on HDB-BTO and select "Deploy". You should be able to see "BUILD SUCCESSFUL". 
+
+•	The web application can then be reached with this url: http://localhost:8080/HDB-BTO-war/
+  
+•	We have pre-define some credentials: 
+- HDB ADMIN: Username: HDB1, Password: alvinhdb
+- CPF ADMIN: Username: CPF1, Password: aaroncpf
+- User: Register a user through the web application
+
+**_At any point if the web application crashes, simply redeploy the project (HDB-BTO)_** :+1:
+
+# Hyperledger Preparation
+
+**Software Requirements:**
 
 •	Download and install vagrant (include virtualbox installation) on the host system from vagrantup.com
 
