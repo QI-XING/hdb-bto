@@ -7,7 +7,7 @@ HDB BTO housing grant and flat allocation process in blockchain
 
 •	If you are using windows 7, please use vagrant 1.9.6 only and Virtual Box 5.1.x
 
-•	Download the Vagrantfile from this repo at this link: https://raw.githubusercontent.com/suenchunhui/fabric-tutorial-vagrant/master/Vagrantfile to an empty folder
+•	Download the Vagrantfile from this repo at this link: https://github.com/QI-XING/hdb-bto/blob/master/Vagrantfile to an empty folder
 
 **Pre-requisites:**
 
@@ -21,9 +21,26 @@ HDB BTO housing grant and flat allocation process in blockchain
 
 ### If you are new to Vagrant: ###
 
-1.	change directory to the folder containing the downloaded Vagrantfile
+-	change directory to the folder containing the downloaded Vagrantfile
 
-2.	run vagrant up from the commandline(OSX: terminal, Win: cmd.exe) to provision the entire system. Download and provisioning system can take a long up (up to 10-20mins)
+-	run vagrant up from the commandline(OSX: terminal, Win: cmd.exe) to provision the entire system. Download and provisioning system can take a long up (up to 10-20mins)
+
+- Once you reach the success screen output,
+
+```
+==> default:
+==> default: tern_from_ts@0.0.1 node_modules/tern_from_ts
+==> default: --------------------------------------------------------------------
+==> default: Success!
+==> default: run 'node server.js -p 8080 -a :' to launch Cloud9
+==> default: ++ echo 'cd /cloud9 ; su ubuntu -c "nodejs server.js -l 0.0.0.0 -w /home/ubuntu --auth root:secret" &'
+==> default: ++ cd /cloud9
+==> default: ++ su ubuntu -c 'nodejs server.js -l 0.0.0.0 -w /home/ubuntu --auth root:secret'
+```
+
+- and the terminal command exits, you can open the browser based IDE at localhost:8181
+
+- login into the IDE using the default credentials root and secret
 
 ### To change Vagrant Settings: ###
 
