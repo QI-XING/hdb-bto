@@ -63,6 +63,12 @@ git pull
 cd composer-playground
 ./playground.sh
 ```
+
+Open the playground web UI in a browserby going to http://localhost:4040
+
+
+If a connection error occurs, you might need to clear your local browser cache.
+
 ### 2. Create a registrar user account on the certificate authority using the command: ###
 ```
 docker exec -it ca.org1.example.com fabric-ca-client enroll -M registrar -u http://admin:adminpw@localhost:7054
